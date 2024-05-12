@@ -26,9 +26,8 @@ cd i3-dots || {
     exit 1
 }
 
-./install.sh || {
-    echo "Failed to run install script. Aborting."
-    exit 1
-}
+./install.sh
+
+sudo chsh -s /usr/bin/zsh
 
 echo "Done!"
